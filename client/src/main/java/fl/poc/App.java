@@ -14,7 +14,7 @@ public class App {
 
     public static void main(String[] args){
         PingService service = new PingService();
-        System.out.println(service);
+        System.out.print(service + ": ");
         Ping port = service.getPingPort();
         System.out.println(port.ping());
     }
