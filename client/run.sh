@@ -3,7 +3,7 @@ CLASSPATH="${CLASSPATH}:/home/fl118890/Workspace/Oracle/products/14.1.1.0.0-base
 CLASSPATH="${CLASSPATH}:/home/fl118890/Workspace/Oracle/products/14.1.1.0.0/oracle_common/modules/com.oracle.webservices.wls.wls-soap-stack-impl.jar"
 
 export CLASSPATH
-java $@ \
+java "$@" \
     -Djavax.net.ssl.trustStorePassword=changeit \
     -Djavax.net.ssl.trustStore=/home/fl118890/Workspace/code/ws-security-poc/keystore.jks \
     -Djava.util.logging.config.file=logging.properties \

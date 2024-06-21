@@ -3,7 +3,6 @@ package fl.poc.ws;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 
-import weblogic.jws.Policies;
 import weblogic.jws.Policy;
 
 @WebService

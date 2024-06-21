@@ -56,8 +56,8 @@ public class App {
         BindingProvider prov = (BindingProvider) port;
         Map<String, Object> requestContext = prov.getRequestContext();
 
-        requestContext.put(BindingProvider.USERNAME_PROPERTY, "weblogic");
-        requestContext.put(BindingProvider.PASSWORD_PROPERTY, "welcome1");
+        //requestContext.put(BindingProvider.USERNAME_PROPERTY, "weblogic");
+        //requestContext.put(BindingProvider.PASSWORD_PROPERTY, "welcome1");
         requestContext.put(WSSConstants.TIMESTAMP_ELEMENT, timestamp);
 
         System.out.println(port.ping());
