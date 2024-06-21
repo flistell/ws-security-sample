@@ -39,6 +39,15 @@
 			<version>7.0</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.oracle.weblogic</groupId>
+			<artifactId>weblogic-server-pom</artifactId>
+			<version>14.1.1-0-0</version>
+			<type>pom</type>
+			<scope>provided</scope>
+		</dependency>
+
 	</dependencies>
+
 
 </project>

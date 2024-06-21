@@ -57,20 +57,28 @@
 				</executions>
 				<configuration>
 					<keep>true</keep>
-					<wsdlUrls>
-						http://127.0.0.1:7001/ws-security-sample-0.0.1-SNAPSHOT/PingService?WSDL</wsdlUrls>
+					<verbose>true</verbose>
+					<wsdlUrls>https://guges-d:7002/ws-security-sample-0.0.1-SNAPSHOT/PingService?WSDL</wsdlUrls>
+					<httpproxy></httpproxy>
+					<vmArgs>
+						<vmArg>-Djavax.net.ssl.trustStorePassword=changeit</vmArg>
+						<vmArg>-Djavax.net.ssl.trustStore=/home/fl118890/Workspace/code/ws-security-poc/keystore.jks</vmArg>
+						<vmArg>-Dhttp.nonProxyHosts=guges-d</vmArg>
+					</vmArgs>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 
 	<dependencies>
+		<!-- 
 		<dependency>
 			<groupId>com.sun.xml.ws</groupId>
 			<artifactId>jaxws-rt</artifactId>
 			<version>2.3.3</version>
 			<type>pom</type>
 		</dependency>
+		-->
 
 		<dependency>
 			<groupId>javax.xml.ws</groupId>
@@ -90,6 +98,15 @@
 			<artifactId>rt</artifactId>
 			<version>2.3.3</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.oracle.weblogic</groupId>
+			<artifactId>weblogic-server-pom</artifactId>
+			<version>14.1.1-0-0</version>
+			<type>pom</type>
+			<scope>provided</scope>
+		</dependency>
+
 	</dependencies>
 
 </project>
