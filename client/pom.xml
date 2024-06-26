@@ -58,11 +58,11 @@
 				<configuration>
 					<keep>true</keep>
 					<verbose>true</verbose>
-					<wsdlUrls>https://guges-d:7002/ws-security-sample-0.0.1-SNAPSHOT/PingService?WSDL</wsdlUrls>
+					<wsdlUrls>https://localhost:7002/ws-security-sample-0.0.1-SNAPSHOT/PingService?WSDL</wsdlUrls>
 					<httpproxy></httpproxy>
 					<vmArgs>
 						<vmArg>-Djavax.net.ssl.trustStorePassword=changeit</vmArg>
-						<vmArg>-Djavax.net.ssl.trustStore=/home/fl118890/Workspace/code/ws-security-poc/keystore.jks</vmArg>
+						<vmArg>-Djavax.net.ssl.trustStore=keystore.jks</vmArg>
 						<vmArg>-Dhttp.nonProxyHosts=guges-d</vmArg>
 					</vmArgs>
 				</configuration>
